@@ -29,17 +29,18 @@
   ],
   "readmeFilename": "README.md",
   "dependencies": {
-    "deprecated-react-native-prop-types": "*"
+    "deprecated-react-native-prop-types": "*",
+    "react-native-pdftron": "github:chzuhadulhadi/pdftron-react-native"
   },
   "peerDependencies": {
+    "prop-types": "*",
     "react": "*",
-    "react-native": "*",
-    "prop-types": "*"
+    "react-native": "*"
   },
   "devDependencies": {
-    "react": "*",
     "@types/react": "*",
     "@types/react-native": "*",
+    "react": "*",
     "typescript": "*"
   }
 }
