@@ -1157,7 +1157,7 @@ NS_ASSUME_NONNULL_END
         
         if ([tool isKindOfClass:[PTFreeHandCreate class]]
             && ![tool isKindOfClass:[PTFreeHandHighlightCreate class]]) {
-            ((PTFreeHandCreate *)tool).multistrokeMode = self.continuousAnnotationEditing;
+            // ((PTFreeHandCreate *)tool).multistrokeMode = self.continuousAnnotationEditing;
         }
     }
 }
