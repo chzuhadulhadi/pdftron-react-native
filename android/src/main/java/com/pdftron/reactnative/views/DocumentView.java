@@ -4092,9 +4092,11 @@ public class DocumentView extends com.pdftron.pdf.controls.DocumentView2 {
     public boolean commitTool() {
         if (getToolManager() != null) {
             ToolManager.Tool currentTool = getToolManager().getTool();
-            if (currentTool instanceof FreehandCreate) {
+            if (currentTool instanceof FreehandCreate) { 
                 ((FreehandCreate) currentTool).commitAnnotation();
-                ((FreehandCreate) currentTool).setInkMultiStrokeEnabled(false);
+                getToolManager().getTool().setMultiStrokeMode(true);
+                getToolManager().getTool().setMultiStrokeMode(true);
+                getToolManager().setTool(getToolManager().createTool(ToolManager.e_ink_create, null));
                 getToolManager().setTool(getToolManager().createTool(ToolManager.ToolMode.PAN, null));
                 return true;
             } else if (currentTool instanceof AdvancedShapeCreate) {
