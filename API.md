@@ -1673,7 +1673,7 @@ If true, ink tool will use multi-stroke mode. Otherwise, each stroke is a new in
 
 ```js
 <DocumentView
-  inkMultiStrokeEnabled={true}
+  inkMultiStrokeEnabled={false}
 />
 ```
 
